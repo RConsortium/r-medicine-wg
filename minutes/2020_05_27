@@ -1,0 +1,73 @@
+5/27/20 Agenda
+
+Review numbers:
+* Registrations
+* Abstracts (drafted, complete)
+* Revenue
+* bit.ly click throughs
+
+Web site:
+* Sponsorship logos needed for AACC, MSACL
+* Dan and Joe to work on getting administrative access to change R/Medicine website to Stephan
+
+Outreach:
+* Review Outreach List
+* This week’s tweet - EB ends 3/31,
+* Everyone to email groups in their institution for outreach. Talking points include that EB is ending; very inexpensive; postdocs = students; everybody with an *.edu address is an academic. Ask people to spread the work and also ask for contributions (mention the abstract due date of 6/24!). See Peter’s email for an example.
+
+Program:
+* Breaks into 6 sessions - have specific themes?
+* Start reviewing abstracts and filling program?
+* Are there people who we’d like to present?
+* Peter - ggconsort package hackathon?
+
+Platform:
+* Dan to plan dry run of Zoom and Crowdcast for 6/9 with everyone. Need a list of features we want to test.
+
+Sponsors:
+* RStudio - can RStudio help promote? Joe to explore
+* R consortium - can R consortium members help promote? Joe and Dan to explore
+* AMIA and Clinical Informatics fellows and directors - Mara to explore how we can promote
+* MSACL - organizing a panel discussion 07/01 with Stephan, Joe, and Mike attending. Stephan will provide a list of questions to discuss. Dan to put MSACL logo on website. Stephan to follow up re: someone from MSACL talking at R/Medicine.
+* AACC - agreed to endorse R/Medicine, final list of activities pending, but will likely include AACC hosting a webinar and someone from AACC talking at R/Medicine.
+* Novartis - waiting for us to submit sponsorship letter for $5K. Dan to provide payment details to Stephan, Stephan to submit letter.
+* Biogen - Stephan to submit application once NVS application is done
+* Medidata - Stephan to follow up with Steve Schwager
+
+------------------------------------------------------------------------------
+Minutes--
+
+Dan:
+* Post MSACL logo on r-medicine.com :white_check_mark:
+* Send list of emails of non-submitted abstracts to Beth so she can nag the authors
+* Email to everyone who registered, asking for a preference for workshop
+* Create a plan for testing Crowdcast and Zoom on 6/10
+* Create a deck of R/Medicine branded slides to use at the beginning of each talk. Slide 1: R/Med logo, and have space for talk title. Slide 2: An R/Medicine branded template to introduce the speaker, with space for a picture and a very short bio. Slide 3: A slide that will contain the logo of all sponsors
+
+Joe:
+* Contact Robert Gentleman re: talk title
+* Ask the RStudio social media team what it would take to re-tweet R/Medicine announcements on Twitter/LinkedIn
+
+Mike:
+* Contact Daniela Witten re: talk title and tweet
+* Reach out to groups at Yale (and document on the outreach sheet)
+
+Stephan:
+* Tweet about Stephan’s workshop - EB ends! Sign up today to reserve your space. 
+* Reach out to groups at Penn and CHOP 
+* Submit sponsorship application to Novartis 
+* Submit sponsorship application to Biogen
+* Follow up with Steve Schwager re: Medidata sponsorship
+* Ask Dan Holmes to give a talk at R/Medicine about MSACL 
+* Work with AACC on getting a webinar and marketing going
+
+Mara:
+* Work on tweet with Stephan 
+* Reach out to AMIA and Clinical Informaticists → do this once we have themes?
+
+Beth:
+* Review submitted abstracts
+* Get list of emails of pending abstract submissions from Dan and nag authors to complete their submissions
+* Create draft list of 6 “themes” for the conference sessions. One should probably be “R the clinical laboratory”, and that would be the one with Patrick Mathias as keynote and with MSACL and AACC giving their talks.
+* Compose a list of people who we might want to invite to give a regular talk. Peter has some good suggestions. → do this once we have themes
+* Reach out to groups at Mayo (and document on the outreach sheet)
