@@ -1,0 +1,121 @@
+---
+title: R Medicine 2020: The power of a virtual event
+author:
+  # see ?rjournal_article for more information
+  - name: Elizabeth J. Atkinson
+    affiliation: Mayo Clinic
+    address:
+    - 200 First Street SW
+    - Rochester, MN 55905
+    orcid: 0000-0002-1191-3775
+    email:  atkinson@mayo.edu
+  - name: Stephan Kadauke
+    url: https://journal.r-project.org
+    email: kadaukes@chop.edu
+    orcid: 0000-0002-9079-593X
+    affiliation: Affiliation 1
+    address:
+    - line 1 affiliation 1
+    - line 2 affiliation 1
+  - name: Peter Higgins
+    url: https://journal.r-project.org
+    email: phiggins@med.umich.edu
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Denise Esserman
+    url: https://journal.r-project.org
+    email: denise.esserman@yale.edu
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Michael Kane
+    url: https://journal.r-project.org
+    email: michael.kane@yale.edu
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Steven Schwager
+    url: https://journal.r-project.org
+    email: steven.schwager@cornell.edu
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Joseph Rickert
+    url: https://journal.r-project.org
+    email: joseph.rickert@rstudio.edu
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Daniella Mark
+    url: https://journal.r-project.org
+    email: daniella@procogia.com
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+  - name: Mara Alexeev
+    url: https://journal.r-project.org
+    email: mara.alexeev@gmail.com
+    affiliation: Affiliation
+    address:
+    - line 1 affiliation
+    - line 2 affiliation
+abstract: >
+ [An abstract of less than 150 words.]
+The 3rd annual R/Medicine conference had been planned as a physical event to be held in Philadelphia in August 2020. However, the nationwide lockdown induced by the COVID-19 pandemic necessitated a quick transition to a virtual conference. In this article we describe the challenges and benefits we encountered with this transition.
+
+preamble: |
+  % Any extra LaTeX you need in the preamble
+  
+# per R journal requirement, the bib filename should be the same as the output 
+# tex file. Don't forget to rename the bib file and change this example value.
+bibliography: Rmed2020_Rjournal.bib
+
+output: rticles::rjournal_article
+---
+
+## Introduction
+
+Introductory section which may include references in parentheses
+[@R], or cite a reference such as @R in the text.
+
+## Technical solutions
+
+The initial challenge for the planning committee was identifying
+technology that could enable us to run a main session of presentations, have short courses, and have some sort of Birds of a Feather activity. Because this is a smaller conference with a limited budget we had limited choices for the online conferencing platform.  With help from the R Consortium in reviewing the available tools, we chose to use Crowdcast (https://www.crowdcast.io). This tool was simple to use for the attendees and the organizers, had a green room to line up speakers, an interactive chat feature, and the ability to automatically replay a talk once it was over. The short courses were conducted using Zoom, including the breakout room feature. Zoom was also used for the Birds of a Feather sessions.  Finally, we used Slack for communication between the organizers, the participants and the presenters.  Certain channels were created for participants and other channels were limited to the conference planners.  
+
+At the end of the conference, all the presentations were loaded onto the R/Medicine 2020 YouTube playlist hosted by the R Consortium. Since September 13, 2020 when the videos were loaded, there have been 3,185 views. 
+
+## The conference
+
+587 registered including 225 students, 185 academics, 104 from industry, and 73 who were working on COVID related projects.  Of these, 32% were from outside the United States from 43 countries.  452 attended at least some of the sessions live and 431 watched some of the sessions via replay. 
+
+This section may contain a figure such as Figure \ref{fig:Rlogo}.
+
+```{r, Rlogo, echo=FALSE, fig.cap='The logo of R.', out.width='2in', fig.align='center', fig.pos='htbp'}
+knitr::include_graphics('Rlogo.pdf')
+```
+
+## Summary
+
+This file is only a basic article template. For full details of _The R Journal_ style and information on how to prepare your article for submission, see the [Instructions for Authors](https://journal.r-project.org/share/author-guide.pdf).
+
+### About this format and the R Journal requirements
+
+`rticles::rjournal_article` will help you build the correct files requirements: 
+
+* A R file will be generated automatically using `knitr::purl` - see
+https://bookdown.org/yihui/rmarkdown-cookbook/purl.html for more information.
+* A tex file will be generated from this Rmd file and correctly included in
+`RJwapper.tex` as expected to build `RJwrapper.pdf`.
+* All figure files will be kept in the default rmarkdown `*_files` folder. This
+happens because `keep_tex = TRUE` by default in `rticles::rjournal_article`
+* Only the bib filename is to modifed. An example bib file is included in the
+template (`RJreferences.bib`) and you will have to name your bib file as the
+tex, R, and pdf files.
