@@ -67,14 +67,13 @@ author:
     - line 1 affiliation
     - line 2 affiliation
 abstract: >
- [An abstract of less than 150 words.]
-The 3rd annual R/Medicine conference had been planned as a physical event to be held in Philadelphia in August 2020. However, the nationwide lockdown induced by the COVID-19 pandemic necessitated a quick transition to a virtual conference. In this article we describe the challenges and benefits we encountered with this transition.
+The 3rd annual R/Medicine conference was planned as a physical event
+to be held in Philadelphia in August 2020. However, the nationwide lockdown
+induced by the COVID-19 pandemic necessitated a quick transition to a
+virtual conference. In this article we describe the challenges and
+benefits we encountered with this transition, plus an overview of the
+conference content.
 
-preamble: |
-  % Any extra LaTeX you need in the preamble
-  
-# per R journal requirement, the bib filename should be the same as the output 
-# tex file. Don't forget to rename the bib file and change this example value.
 bibliography: Rmed2020_Rjournal.bib
 
 output: rticles::rjournal_article
@@ -82,25 +81,109 @@ output: rticles::rjournal_article
 
 ## Introduction
 
-Introductory section which may include references in parentheses
-[@R], or cite a reference such as @R in the text.
+R/Medicine is an active working group of the R consortium, with the goal of supporting R users in the medical industry. The group includes a mix of statisticians and physicians who use R regularly in their work, plus members from RStudio and the R Foundation.  In 2020 this group organized the third annual R/Medicine conference which was originally going to be held in Philadelphia. However, by early April 2020 it was clear that the conference would need to be held virtually.  In this article, we aim to describe the challenges and benefits we encountered holding a virtual conference with the hopes of providing useful information for other organizers of a small conference.  
 
-## Technical solutions
+## Conference Planning
 
-The initial challenge for the planning committee was identifying
-technology that could enable us to run a main session of presentations, have short courses, and have some sort of Birds of a Feather activity. Because this is a smaller conference with a limited budget we had limited choices for the online conferencing platform.  With help from the R Consortium in reviewing the available tools, we chose to use Crowdcast (https://www.crowdcast.io). This tool was simple to use for the attendees and the organizers, had a green room to line up speakers, an interactive chat feature, and the ability to automatically replay a talk once it was over. The short courses were conducted using Zoom, including the breakout room feature. Zoom was also used for the Birds of a Feather sessions.  Finally, we used Slack for communication between the organizers, the participants and the presenters.  Certain channels were created for participants and other channels were limited to the conference planners.  
+Initial planning for the conference began in January 2020, and during the
+first few months of the year we had begun identifying keynote speakers and
+workshop leaders, and begun negotiations with a hotel near
+the Children's Hospital of Philadelphia which was helping host the
+conference. By the beginning of April we
+realized that we would need to switch to a virtual conference. The initial
+challenge for the planning committee was identifying
+technology that would allow us to run a main session of presentations,
+have short courses, and have some sort of Birds of a Feather (BoF)
+activity. Because this is a small conference with a limited budget we had
+limited choices for the online conferencing platform.  With help from the
+Linux Foundation who provided reviews of some of the available conference
+platforms, we chose to use Crowdcast (https://www.crowdcast.io). 
+This tool was simple to
+use for the attendees and the organizers, had a green room to line up
+speakers, an interactive chat feature, and the ability to automatically
+replay a talk once it was over. The short courses were conducted using
+Zoom and rmed2020.cloud for interactive programming in a pre-defined environment.  Zoom was also
+used for the BoF sessions.  Finally, we used Slack for communication
+between the organizers, the participants and the presenters.  Certain
+channels were created for participants and other channels were limited to
+the conference planners.  
 
-At the end of the conference, all the presentations were loaded onto the R/Medicine 2020 YouTube playlist hosted by the R Consortium. Since September 13, 2020 when the videos were loaded, there have been 3,185 views. 
+At the end of the conference, all the presentations were loaded onto the
+R/Medicine 2020 YouTube playlist hosted by the R Consortium. Since
+September 13, 2020 when the videos were loaded, there have been over 3,185
+views. 
 
-## The conference
+Registration and abstract submission was facilitated by infrastructure
+provided by the Linux Foundation.  GoogleSheets were used to centralize
+organization of the program and the list of volunteers. Finally, Twitter was used to create excitement about the conference and to inform potential attendees of workshops and keynote speakers. 
 
-587 registered including 225 students, 185 academics, 104 from industry, and 73 who were working on COVID related projects.  Of these, 32% were from outside the United States from 43 countries.  452 attended at least some of the sessions live and 431 watched some of the sessions via replay. 
+### Volunteers 
 
-This section may contain a figure such as Figure \ref{fig:Rlogo}.
+Volunteers needed for the virtual conference were significantly higher than for the previous in-person conferences.  For each short course we had at least one teaching assistant for every 10 participants.  Additionally, we had someone monitoring the Zoom chat to escalate issues when appropriate. 
+For the main session we had two moderators who alternated between speakers so that they could orient the upcoming speaker in the green room.  We also had a Crowdcast host who helped behind the scenes and moved participants from one presentation to the next. One person was also in charge of playing any of the talks that were pre-recorded.  Finally, each BoF room had a facilitator. Because this was virtual, we had back-up volunteers identified in case there were power outages in a particular region of the country.  Pre-conference technical checks were held prior to the conference for the speakers, instructors, and volunteers. 
 
-```{r, Rlogo, echo=FALSE, fig.cap='The logo of R.', out.width='2in', fig.align='center', fig.pos='htbp'}
-knitr::include_graphics('Rlogo.pdf')
-```
+## The Conference
+
+In the previous two years, attendance at the conferences were less than 150.  In 2020, 587 people registered for the conference including 225 students, 185 academics, 104 from industry, and 73 who were working on COVID related projects.  Of these, 32% were from outside the United States coming from 43 countries.  Out of those who registered, 452 attended at least some of the sessions live and 431 watched some of the sessions via the replay feature in Crowdcast.
+
+Pre-conference events included two short courses presented on the day prior to the conference.  The first course, *Introduction to R for Clinicians*, was taught by other clinicians.  The second course *Introduction to Machine Learning with Tidymodels* was taught by Alison Hill and focused more on the data scientist/statistician audience.   
+
+The main conference was held over two days and included 4 keynote addresses, 16 regular talks, 11 lightning talks, and 1 panel discussion.
+The schedule included three BoF time slots, each with 4-5 different topics.
+
+Attendance at the short courses were limited by request of the instructors.
+143 participants attended the class geared towards clinicians and 80
+attended the Tidymodels course.  Because there were more people interested
+than slots, we randomly selected from all who were interested.  The courses
+were recorded and anyone who registered for the conference could later view
+either one.
+
+
+### Scientific Program
+
+The general themes for the presentations were:
+
+* R in Clinical Research/Clinical Trials
+* Collaboration/reproducibility
+* New analysis approaches and packages
+* Education and bioethics
+* Dashboards and Shiny Apps
+* COVID research
+
+We received 43 abstracts and accepted 25.  Additionally, we held space for late-breaking COVID related presentations and for two sponsors.  
+
+## Lessons learned
+
+Overall, the conference succeeded well beyond our expectations.  Some of the lessons we learned are as follows.
+
+* The chat feature helped build community and allowed active participation in the conference. For instance, some presenters tag-teamed where one person presented and another answered questions via chat as questions arose.  Other presentors pre-recorded their talk and answered questions about their presentations.  
+
+* The use of Slack was essential for the behind the scenes coordination, especially as issues arose.  Additionally, we had participants create their own channels and zoom sessions to further discussion on certain issues.
+
+* Having back-ups for all the major coordinating roles was important.  Fortunately we had limited issues, but 
+
+* It takes more time to transition between presenters and this needs to be built into the schedule, especially if there are technical issues.   
+
+* During the presentations it was challenging to let speakers know when they were running out of time. All moderators downloaded a doorbell app to their phones that they played at pre-specified times, however that was not always sufficient.  For 2021 we are planning to only allow pre-recorded lightning talks to help with this issue. 
+
+* Having a virtual meeting greatly expanded our reach. In 2019 we held the conference in Boston and had roughly 100 attendees from a handful of countries whereas in 2020 we had 587 from 43 countries. The larger attendance will increase our ability to obtain sponsors for future conference.  
+
+* Recruitment for high caliber keynote speakers was perhaps easier since the time commitment was significantly less. 
+
+## Sponsors
+
+We would like to thank all the sponsors that supported the 2020 conference: American Association for Clinical Chemistry (AACC), Children's Hospital of Philadelphia (CHOP), Association for Mass Spectrometry & Advances in the Clinical Lab (MSACL), Procogia, the R Consortium, RStudio, and Yale School of Public Health.  
+
+## Acknowledgements
+
+As members of the R/Medicine 2020 Organizing Committee, we would like to thank all the volunteers that contributed to the success of the conference, the Program Committee members, keynote and contributed speakers, and all the attendees who came and participated. 
+
+## Links
+
+Further information about R/Medicine 2020 and the contributions presented during the conference can be found at the following links:
+
+1. conference website: https://events.linuxfoundation.org/r-medicine/
+2. YouTube playlist: https://www.youtube.com/playlist?list=PL4IzsxWztPdljYo7uE5G_R2PtYw3fUReo
 
 ## Summary
 
