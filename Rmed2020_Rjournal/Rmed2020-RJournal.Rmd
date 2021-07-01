@@ -131,9 +131,9 @@ We conducted a brief post-conference survey, which garnered 163 responses. We in
 
 ### Short Courses
 
-Pre-conference events included two short courses presented on the day prior to the conference. The first course, *Introduction to R for Clinicians*, is an adaptation of the popular *Welcome to the Tidyverse* course -@tidyclass for an audience of healthcare professionals and clinical researchers. The four-hour course placed heavy emphasis on using R Markdown as a computational document format and introduced fundamental concepts of data visualization and data transformation using the `tidyverse` set of tools @Wickham2019. Course materials -@introcourse and recordings -@introhear are available online. 
+Pre-conference events included two short courses presented on the day prior to the conference. The first course, *Introduction to R for Clinicians*, is an adaptation of the popular *Welcome to the Tidyverse* course @tidyclass for an audience of healthcare professionals and clinical researchers. The four-hour course placed heavy emphasis on using R Markdown as a computational document format and introduced fundamental concepts of data visualization and data transformation using the `tidyverse` set of tools @Wickham2019. Course materials @introcourse and recordings @introhear are available online. 
 
-The second course, *Introduction to Machine Learning with Tidymodels*, was taught by Alison Hill and focused on the data scientist/statistician audience. This four-hour course aimed to provide a gentle introduction to machine learning with R using the modern suite of predictive modeling packages called `tidymodels`. Participants practiced building, evaluating, comparing, and tuning predictive models interactively. The course introduced fundamental concepts including resampling, overfitting, the holdout method, the bias-variance trade-off, ensembling, cross-validation, and feature engineering; the course material -@tidycourse is available online. 
+The second course, *Introduction to Machine Learning with Tidymodels*, was taught by Alison Hill and focused on the data scientist/statistician audience. This four-hour course aimed to provide a gentle introduction to machine learning with R using the modern suite of predictive modeling packages called `tidymodels`. Participants practiced building, evaluating, comparing, and tuning predictive models interactively. The course introduced fundamental concepts including resampling, overfitting, the holdout method, the bias-variance trade-off, ensembling, cross-validation, and feature engineering; the course material @tidycourse is available online. 
 
 Attendance at the short courses was limited by request of the instructors.
 The *Introduction to R for Clinicians* class drew 143 participants, and 80
@@ -195,9 +195,5 @@ As members of the R/Medicine 2020 Organizing and Programming Committees, we woul
 
 ## Links
 
-Further information about R/Medicine 2020 and the contributions presented during the conference can be found at the following links:
-
-1. conference website: https://events.linuxfoundation.org/r-medicine/
-2. YouTube playlist: https://www.youtube.com/playlist?list=PL4IzsxWztPdljYo7uE5G_R2PtYw3fUReo
-
+Further information about R/Medicine 2020 and the contributions presented during the conference can be found at the conference website: https://events.linuxfoundation.org/r-medicine/
 
