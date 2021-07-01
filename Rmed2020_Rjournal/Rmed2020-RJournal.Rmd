@@ -3,7 +3,7 @@ title: "R Medicine 2020: The Power of Going Virtual"
 author:
   # see ?rjournal_article for more information
   - name: Elizabeth J. Atkinson
-    affiliation: Mayo Clinic
+    affiliation: Department of Quantitative Health Sciences, Mayo Clinic
     address:
     - 200 First Street SW
     - Rochester, MN 55905
@@ -64,13 +64,9 @@ author:
     address:
     - 3401 Civic Center Blvd.
     - Philadelphia, PA 19104
-abstract: > The 3rd annual R/Medicine conference was planned as a physical event to be held in Philadelphia in August 2020. However, a nationwide lockdown induced by the COVID-19 pandemic required a swift transition to a virtual conference. This article  describes the challenges and benefits we encountered with this transition and provides an overview of the conference content.
+abstract: > 
+  The 3rd annual R/Medicine conference was planned as a physical event to be held in Philadelphia in August 2020. However, a nationwide lockdown induced by the COVID-19 pandemic required a swift transition to a virtual conference. This article  describes the challenges and benefits we encountered with this transition and provides an overview of the conference content.
 
-preamble: |
-  % Any extra LaTeX you need in the preamble
-  
-# per R journal requirement, the bib filename should be the same as the output 
-# tex file. Don't forget to rename the bib file and change this example value.
 bibliography: Rmed2020_Rjournal.bib
 
 output: rticles::rjournal_article
@@ -186,13 +182,13 @@ The final session started with a keynote by Patrick Mathias, who shared his expe
 
 Overall, the conference succeeded well beyond our expectations.  Some of the lessons we learned are as follows.
 
-* The chat feature helped build community and allowed active participation in the conference. For instance, some presenters tag-teamed where one person presented and another answered questions via chat as they arose.  Other presenters pre-recorded their talk and answered libr questions about their topic during the playback of their presentations.  
+* The chat feature helped build community and allowed active participation in the conference. For instance, some presenters tag-teamed where one person presented and another answered questions via chat as they arose.  Other presenters pre-recorded their talk and answered live questions during the playback of their presentation.  
 
 * Slack was essential for the behind-the-scenes coordination, especially as issues arose.  Additionally, we had participants create their own channels and zoom sessions for further discussion on certain topics.
 
 * Having back-ups for all the major coordinating roles was essential. Fortunately we had limited issues, but one keynote speaker experienced a power outage, leading to an unavoidable delay.  
 
-* Although Crowdcast allows for smooth transitioning between speakers, time to transition between presenters needs to be built into the schedule, since people run over, technical issues emerge, and biobreaks are important.  It is also wise to build in some flex-time in case there are technical difficulties or the program gets behind schedule.     
+* Although Crowdcast allows for smooth transitioning between speakers, time to transition between presenters needs to be built into the schedule, since people run over, technical issues emerge, and bio-breaks are important.  It is also wise to build in some flex-time in case there are technical difficulties or the program gets behind schedule.     
 
 * During the presentations it was challenging to let speakers know when they were running out of time. All moderators downloaded a doorbell app to their phones that they played at pre-specified times, however that was not always sufficient. For 2021 we are planning to require lightning talks to be pre-recorded. 
 
@@ -206,7 +202,7 @@ We would like to thank all the sponsors that supported the 2020 conference: Amer
 
 ## Acknowledgements
 
-As members of the R/Medicine 2020 Organizing and Programming Committees, we would like to thank all the volunteers who contributed to the success of the conference, the keynote and contributed speakers, and all the attendees who came and participated. 
+As members of the R/Medicine 2020 Organizing and Programming Committees, we would like to thank all the volunteers who contributed to the success of the conference, the course instructors, the keynote and contributed speakers, and all the attendees who came and participated. 
 
 ## Links
 
