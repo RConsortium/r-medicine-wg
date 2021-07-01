@@ -1,5 +1,5 @@
 ---
-title: R Medicine 2020: The Power of Going Virtual
+title: "R Medicine 2020: The Power of Going Virtual"
 author:
   # see ?rjournal_article for more information
   - name: Elizabeth J. Atkinson
@@ -11,22 +11,22 @@ author:
     email:  atkinson@mayo.edu
   - name: Peter D. Higgins
     email: phiggins@med.umich.edu
-    affiliation: University of Michigan Health
+    affiliation: Department of Internal Medicine, University of Michigan Health
     address:
     - 1500 E Medical Center Dr.
     - Ann Arbor, MI 48109
   - name: Denise Esserman
     email: denise.esserman@yale.edu
-    affiliation: Yale School of Public Health
+    affiliation: Department of Biostatistics, Yale School of Public Health
     address:
     - 300 George Street, Ste 555
-    - New Haven, CT
+    - New Haven, CT 06511
   - name: Michael J. Kane
     email: michael.kane@yale.edu
-    affiliation: Yale School of Public Health
+    affiliation: Department of Biostatistics, Yale School of Public Health
     address:
     - 300 George Street, Ste 555
-    - New Haven, CT
+    - New Haven, CT 06511
   - name: Steven J. Schwager
     email: steven.schwager@cornell.edu
     affiliation: Cornell University
@@ -64,13 +64,8 @@ author:
     address:
     - 3401 Civic Center Blvd.
     - Philadelphia, PA 19104
-abstract: >
-The 3rd annual R/Medicine conference was planned as a physical event
-to be held in Philadelphia in August 2020. However, a nationwide lockdown
-induced by the COVID-19 pandemic necessitated a swift transition to a
-virtual conference. In this article we describe the challenges and
-benefits we encountered with this transition and provide an overview of the
-conference content.
+abstract: > The 3rd annual R/Medicine conference was planned as a physical event to be held in Philadelphia in August 2020. However, a nationwide lockdown induced by the COVID-19 pandemic required a swift transition to a virtual conference. This article  describes the challenges and benefits we encountered with this transition and provides an overview of the conference content.
+
 preamble: |
   % Any extra LaTeX you need in the preamble
   
@@ -83,17 +78,18 @@ output: rticles::rjournal_article
 
 ## Introduction
 
-R/Medicine is an active working group of the R consortium, with the goal of supporting the adoption of statistical modeling and data processing in clinical practice, including clinical trial design and analysis, personalized medicine, the development of machine learning models using laboratory and patient record data, and reproducible research, by promoting the use of the R programming environment and ecosystem. The group includes a mix of statisticians and physicians who use R regularly in their work, as well as members from RStudio, PBC, and the R Foundation.  
+R/Medicine is an active working group of the R consortium, with the goal of supporting the R users in medicine, medical research, and related health fields. The group includes a mix of statisticians and physicians who use R regularly in their work, as well as members from RStudio, public benefit corporations, and the R Foundation.  
 
-The inaugural R/Medicine conference was a 2-day event held in 2018 at Yale University that featured distinguished speakers including Rob Tibshirani (Professor of Biomedical Data Science at Stanford and inventor of the Lasso method of regularized linear regression) and Max Kuhn (former Senior Director of Statistics at Pfizer and author of multiple textbooks on machine learning and the widely used `{caret}` and `{tidymodels}` packages), and 150 attendees. For the second year, a half-day pre-conference workshop was added to the schedule that featured parallel workshops for attendees in order to promote data literacy and data science education.  
+The inaugural R/Medicine conference was a 2-day event held in 2018 near Yale University that featured keynote speakers Rob Tibshirani and Max Kuhn and had 150 attendees. For the second year, two half-day pre-conference workshops were added to the schedule.  
 
-In 2020, the R/Medicine working group organized the third annual R/Medicine conference which was originally planned to be held in Philadelphia. However, by early April 2020 it was clear that the conference would need to be held virtually.  In this article, we aim to describe challenges as well as unexpected benefits we encountered pivoting an in-person meeting to a virtual conference with the hopes of providing useful information for other organizers of a small conference.  
+In 2020, the R/Medicine working group organized the third annual R/Medicine conference which was originally planned to be held in Philadelphia. However, by early April 2020 it was clear that the conference would need to be held virtually.  This article describes some of the challenges as well as unexpected benefits we encountered when pivoting an in-person meeting to a virtual conference, with the hopes of providing useful information for other organizers of a small conference.  
 
 ## Conference Planning and Logistics
 
-Initial planning for the conference began in January 2020. By Febuary, we had 
+Initial planning for the conference began in January 2020. By February, we had 
 identified keynote speakers and workshop leaders, and started negotiations with a hotel near
-the Children's Hospital of Philadelphia which was pegged as the site of the conference. 
+the Children's Hospital of Philadelphia which was 
+pegged as the site of the conference. 
 However, by the beginning of April we
 realized that we would need to switch to a virtual event. 
 
@@ -109,17 +105,16 @@ This tool was simple to
 use for the attendees and the organizers, had a green room to line up
 speakers, an interactive chat feature, and the ability to automatically provide a recording of the session
 for replay immediately after its conclusion. Compared to other conference platforms, Crowdcast has a rather minimalist set of features. However, feedback from conference participants confirmed 
-that the user interface, consisting of a single-track video feed and sidebar participant chat worked well. It appears that limiting the degrees of freedom can create a more cohesive and uniform user experience. One downside of Crowdcast is that it does not support screen readers or closed captioning at this time.
+that the user interface, consisting of a single-track video feed and sidebar participant chat worked well. It appears that limiting the degrees of freedom can create a more cohesive and uniform user experience. One downside of Crowdcast was that it did not support screen readers or closed captioning.
 
-For the short courses we chose Zoom (https://zoom.us) as the delivery platform, primarily because of its widespread use (we figured most participants already had a working installation on their computer and had used it previously) and because of a mature break-out-room functionality. We found that breakout rooms are a useful tool for teaching, but should be used sparingly, because the overhead of sending participants into breakout rooms can interrupt the flow of teaching the material. For the *Introduction to R for Clinicians* course, we had a meet-and-greet break-out near the beginning of the course as well as a final "Hackathon" breakout in which participants were able to team up to design a dashboard.
+For the short courses we chose Zoom (https://zoom.us) as the delivery platform, primarily because of its widespread use and because of a mature break-out-room functionality. We found that breakout rooms are a useful tool for teaching, but should be used sparingly, because the overhead of sending participants into breakout rooms can interrupt the flow of teaching the material. For the *Introduction to R for Clinicians* course, we had a meet-and-greet break-out near the beginning of the course as well as a final "Hackathon" breakout in which participants were able to team up to design a dashboard.
 
 The most effective way to teach programming topics is live coding [[ref: Teaching Tech Together book by Greg Wilson]]. Much effort has been devoted to create teaching environments that allow participants to live code during a short course without requiring installation of any software. In the R ecosystem, the most notable and laudable effort in this regard is RStudio Cloud (https://rstudio.cloud), which is based on the RStudio Server Integrated Development Environment (IDE). 
 
 From previous experience teaching R to an audience of clinicians who have no programming experience and are unfamiliar with the R ecosystem, we knew that RStudio Cloud can present difficulty, because it requires that each participant first register a personal account on the platform before being granted access to the training environment. To address this, and replicating the experience seen with teaching environments of other vendors in the clinical information system space such as Epic (Verona, WI), we created a training environment with pre-configured generic sequentially numbered training accounts (e.g., `train001`, `train002`, etc.). After receiving training account credentials, a participant can directly access their training environment from a web browser without any further sign-ups. The training environment is implemented as a Docker-based web application based on RStudio Server which can be configured with custom R packages and exercise files and can be hosted on any cloud provider. We make the application available here for free: https://github.com/skadauke/rsp-train.
 
-We used Zoom for the BoF sessions. We used Slack for communication
-between the organizers, participants, and presenters. Certain
-channels were created for participants and other channels were limited to
+We used Zoom for the BoF sessions. We used Slack for back-channel communication
+between the organizers, participants, and presenters. Some channels were created for participants while other channels were limited to
 the conference planners.  
 
 After the conclusion of the conference, all the recorded presentations were loaded onto the
@@ -127,7 +122,7 @@ R/Medicine 2020 YouTube channel which is hosted by the R Consortium (https://www
 September 13, 2020 when the videos were uploaded, there have been over 3,185
 views. 
 
-Registration and abstract submission was facilitated by infrastructure
+Registration and abstract submission were facilitated by infrastructure
 provided by the Linux Foundation.  Google Sheets were used to centralize
 organization of the program and the list of volunteers. We used Google Docs for creating conference planning documents and Google Forms for sign-ups and course surveys. 
 
@@ -135,13 +130,13 @@ Since the `@r_medicine` Twitter account has a large following (2,557 as of June 
 
 ### Volunteers 
 
-Volunteers needed for the virtual conference were significantly higher than for the previous in-person conferences.  For each short course we had at least one teaching assistant for every 10 participants.  Additionally, we had someone monitoring the Zoom chat to escalate issues when necessary. 
+The number of volunteers needed for the virtual conference was significantly higher than for the previous in-person R/Medicine conferences.  For each short course we had at least one teaching assistant for every 10 participants.  Additionally, we had someone monitoring the Zoom chat to escalate issues when necessary. 
 
-For the main session we had two moderators who alternated between speakers so that they could orient the upcoming speaker in the green room.  We also had a Crowdcast host who helped behind the scenes and moved participants from one presentation to the next. One person was also in charge of playing any of the talks that were pre-recorded. Each BoF room had a facilitator, with back-up facilitators available in case there were power or network outages. Pre-conference training and discussion sessions were held for short course teaching assistants. Pre-conference technical checks were held prior to the conference for the speakers, instructors, and volunteers. 
+For the main session we had two moderators who alternated between speakers in order to orient the upcoming speaker in the green room.  We also had a Crowdcast host who helped behind the scenes and moved participants from one presentation to the next. One person was also in charge of playing any of the talks that were pre-recorded. Each BoF room had a facilitator. Because this was a virtual conference, we had back-up volunteers identified in case there were power outages or internet access failures in particular regions of the country. Pre-conference training and discussion sessions were held for short course teaching assistants. Pre-conference technical checks were held prior to the conference for the speakers, instructors, and volunteers. 
 
 ## The Conference
 
-In the previous two years, attendance at the conferences was less than 150 participants. In 2020, 587 people registered for the conference, including 225 students, 185 academics, 104 from industry, and 73 who were working on COVID related projects. Of these, 32% were from outside the United States coming from 43 countries (Fig 1). Out of those who registered, 452 attended at least some of the sessions live and 431 watched some of the sessions via the replay feature in Crowdcast.
+In the previous two years, attendance at the conferences was around 150 participants. In 2020, 587 people registered for the conference, including 225 students, 185 academics, 104 from industry, and 73 who were working on COVID related projects. Of these, 32% were from outside the United States coming from 43 countries (Fig 1). Of those who registered, 452 attended at least some sessions live and 431 watched some sessions via the replay feature in Crowdcast.
 
 The main conference was held over two days and included 4 keynote addresses, 16 regular talks, 11 lightning talks, and one panel discussion. The schedule included three BoF time slots, each with 4-5 different topics.
 
@@ -151,11 +146,11 @@ We conducted a brief post-conference survey, which garnered 163 responses. We in
 
 Pre-conference events included two short courses presented on the day prior to the conference. The first course, *Introduction to R for Clinicians*, is an adaptation of the popular *Welcome to the Tidyverse* course [[ref: Web site: https://github.com/rstudio-education/welcome-to-the-tidyverse]] for an audience of healthcare professionals and clinical researchers. The four-hour course placed heavy emphasis on using R Markdown [[ref: Web site: https://rmarkdown.rstudio.com]] as a computational document format and introduced fundamental concepts of data visualization and data transformation using the `tidyverse` set of tools [[ref: Wickham et al, JOSS 2019. "Welcome to the Tidyverse"]]. Course materials are available here: https://github.com/skadauke/intro-to-r-for-clinicians-rmed2020. Links to recordings of the course are available at this address: https://docs.google.com/document/d/e/2PACX-1vSSeD39D4_nxC4S7lVgyLx9mZjQiU5W96S_4r3Nne8fFVD4aoEiGwnjz0E7nEh-_YYtEyt-9HFWYB78/pub.
 
-The second course *Introduction to Machine Learning with Tidymodels* was taught by Alison Hill and focused  on the data scientist/statistician audience. This four-hour course aimed to provide a gentle introduction to machine learning with R using the modern suite of predictive modeling packages called `tidymodels`. Participants practiced building, evaluating, comparing, and tuning predictive models interactively. Fundamental concepts including resampling, overfitting, the holdout method, the bias-variance trade-off, ensembling, cross-validation, and feature engineering were introduced. Course materials are available here: https://github.com/rstudio-education/tidymodels-virtually. Links to recordings of the course are available here: https://docs.google.com/document/d/e/2PACX-1vRa778ht7ib7HGnWKjn6wf7ShO4KpcHqfMb6IygeEolP0hm44WaULxnz18KDKqTLZNHoPuLx-4hSHyK/pub. 
+The second course, *Introduction to Machine Learning with Tidymodels*, was taught by Alison Hill and focused on the data scientist/statistician audience. This four-hour course aimed to provide a gentle introduction to machine learning with R using the modern suite of predictive modeling packages called `tidymodels`. Participants practiced building, evaluating, comparing, and tuning predictive models interactively. Fundamental concepts including resampling, overfitting, the holdout method, the bias-variance trade-off, ensembling, cross-validation, and feature engineering were introduced. Course materials are available here: https://github.com/rstudio-education/tidymodels-virtually. Links to recordings of the course are available here: https://docs.google.com/document/d/e/2PACX-1vRa778ht7ib7HGnWKjn6wf7ShO4KpcHqfMb6IygeEolP0hm44WaULxnz18KDKqTLZNHoPuLx-4hSHyK/pub. 
 
-Attendance at the short courses were limited by request of the instructors.
+Attendance at the short courses was limited by request of the instructors.
 The *Introduction to R for Clinicians* class drew 143 participants, and 80
-attended the *Introduction to Machine Learning with Tidymodels* course. Because there were more people interested than slots, we randomly selected from all who were interested.  
+attended the *Introduction to Machine Learning with Tidymodels* course. Because there were more people interested than slots available, so we randomly selected from all who were interested.  
 
 ### Scientific Program
 
@@ -169,11 +164,11 @@ This session started with a presentation by Daniela Witten, in which the keynote
 
 #### Collaboration/Reproducibility
 
-The second session again started with a keynote by Robert Gentleman, in which he outlined the value of large, well-curated data sets as well as how the R ecosystem will be essential for developing new treatments as well as validating and deploying healthcare analytics and clinical decision support tools. Additional talks discussed the `{drake}`[[ref: web site: https://docs.ropensci.org/drake/]] and `{holepunch}` [[ref: web site: https://karthik.github.io/holepunch/]] packages.
+The second session again started with a keynote by Robert Gentleman, in which he outlined the value of large, well-curated data sets as well as how the R ecosystem will be essential for developing new treatments as well as validating and deploying healthcare analytics and clinical decision support tools. Additional talks discussed the `{drake}` and `{holepunch}` packages.
 
 #### New analysis approaches and packages
 
-The last session of the first day started with a dazzling presentation by Travis Gerke and Garrick Aden-Buie in which the speakers discussed the development of internal R packages. An early prototype of a package for creating CONSORT diagrams (ref) was presented, as well as the more mature packages `{gtsummary}` [[ref: web site: http://www.danieldsjoberg.com/gtsummary/]], `{nDSPA}` [[ref: web site: https://github.com/riyuebao/nDSPA]], and `{treeheatr}` [[ref: web site: https://trang1618.github.io/treeheatr/]].
+The last session of the first day started with a dazzling presentation by Travis Gerke and Garrick Aden-Buie in which the speakers discussed the development of internal R packages. An early prototype of a package for creating CONSORT diagrams was presented, as well as summaries of more mature packages including `{gtsummary}`, `{nDSPA}`, and `{treeheatr}`.
 
 #### R in Clinical Practice, Education, and Bioethics
 
@@ -181,29 +176,29 @@ The first session of the second conference day started with a keynote speech by 
 
 #### Dashboards and Shiny Apps
 
-This session discussed a variety of web applications developed using the Shiny framework that are being used either in clinical practice or clinical research.
+This session discussed a variety of web applications developed using the Shiny framework that were being used either in clinical practice or clinical research.
 
 #### COVID research
 
-The final session started with a keynote by Patrick Mathias, who shared his experience directing both the clinical operations and operational analytics efforts of one of the busiest clinical COVID19 testing laboratories in the United States [[ref: web site: https://muckrack.com/broadcast/savedclips/view/ZfQEE5xUEW]]. Additional presentations highlighted the role the R has played in coordinating the response to the COVID19 pandemic.
+The final session started with a keynote by Patrick Mathias, who shared his experience directing both the clinical operations and operational analytics efforts of one of the busiest clinical COVID19 testing laboratories in the United States [[ref: web site: https://muckrack.com/broadcast/savedclips/view/ZfQEE5xUEW]]. Additional presentations highlighted the role R has played in coordinating the response to the COVID19 pandemic.
 
 ## Lessons learned
 
 Overall, the conference succeeded well beyond our expectations.  Some of the lessons we learned are as follows.
 
-* The chat feature helped build community and allowed active participation in the conference. For instance, some presenters tag-teamed where one person presented and another answered questions via chat as questions arose.  Other presenters pre-recorded their talk and answered questions about their presentation.  
+* The chat feature helped build community and allowed active participation in the conference. For instance, some presenters tag-teamed where one person presented and another answered questions via chat as they arose.  Other presenters pre-recorded their talk and answered libr questions about their topic during the playback of their presentations.  
 
-* The use of Slack was essential for the behind-the-scenes coordination, especially as issues arose.  Additionally, we had participants create their own channels and zoom sessions to further discussion on certain issues.
+* Slack was essential for the behind-the-scenes coordination, especially as issues arose.  Additionally, we had participants create their own channels and zoom sessions for further discussion on certain topics.
 
-* Having back-ups for all the major coordinating roles was essential. Fortunately we had limited issues, but one keynote speaker experienced a power outage, leading to an unavoidable delay. One 
+* Having back-ups for all the major coordinating roles was essential. Fortunately we had limited issues, but one keynote speaker experienced a power outage, leading to an unavoidable delay.  
 
-* Although Crowdcast allows for smooth transitioning between speakers, time to transition between presenters needs to be built into the schedule, since people run over, technical issues emerge, and biobreaks are important.   
+* Although Crowdcast allows for smooth transitioning between speakers, time to transition between presenters needs to be built into the schedule, since people run over, technical issues emerge, and biobreaks are important.  It is also wise to build in some flex-time in case there are technical difficulties or the program gets behind schedule.     
 
-* During the presentations it was challenging to let speakers know when they were running out of time. All moderators downloaded a doorbell app to their phones that they played at pre-specified times, however that was not always sufficient. For 2021 we are planning to only allow pre-recorded lightning talks to help with this issue. 
+* During the presentations it was challenging to let speakers know when they were running out of time. All moderators downloaded a doorbell app to their phones that they played at pre-specified times, however that was not always sufficient. For 2021 we are planning to require lightning talks to be pre-recorded. 
 
-* Having a virtual meeting greatly expanded our reach. In 2019 we held the conference in Boston and had roughly 100 attendees from a handful of countries whereas in 2020 we had 587 from 43 countries. We hope that the larger attendance will increase our impact as well as our ability to obtain sponsors for future conference.  
+* Having a virtual meeting greatly expanded our reach. In 2019 we held the conference in Boston and had roughly 150 attendees from a handful of countries whereas in 2020 we had 452 attendees from 43 countries. We hope that the larger attendance will increase our impact as well as our ability to obtain sponsors for future conference.  
 
-* Recruitment for high caliber keynote speakers was perhaps easier since the time commitment was significantly less. 
+* Recruitment for high caliber keynote speakers was perhaps easier because the time commitment and travel effort were substantially less. 
 
 ## Sponsors
 
@@ -211,7 +206,7 @@ We would like to thank all the sponsors that supported the 2020 conference: Amer
 
 ## Acknowledgements
 
-As members of the R/Medicine 2020 Organizing Committee, we would like to thank all the volunteers that contributed to the success of the conference, the Program Committee members, keynote and contributed speakers, and all the attendees who came and participated. 
+As members of the R/Medicine 2020 Organizing and Programming Committees, we would like to thank all the volunteers who contributed to the success of the conference, the keynote and contributed speakers, and all the attendees who came and participated. 
 
 ## Links
 
@@ -220,9 +215,6 @@ Further information about R/Medicine 2020 and the contributions presented during
 1. conference website: https://events.linuxfoundation.org/r-medicine/
 2. YouTube playlist: https://www.youtube.com/playlist?list=PL4IzsxWztPdljYo7uE5G_R2PtYw3fUReo
 
-## Summary
-
-This file is only a basic article template. For full details of _The R Journal_ style and information on how to prepare your article for submission, see the [Instructions for Authors](https://journal.r-project.org/share/author-guide.pdf).
 
 ### About this format and the R Journal requirements
 
