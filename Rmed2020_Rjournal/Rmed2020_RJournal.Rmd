@@ -71,7 +71,11 @@ induced by the COVID-19 pandemic necessitated a swift transition to a
 virtual conference. In this article we describe the challenges and
 benefits we encountered with this transition and provide an overview of the
 conference content.
-
+preamble: |
+  % Any extra LaTeX you need in the preamble
+  
+# per R journal requirement, the bib filename should be the same as the output 
+# tex file. Don't forget to rename the bib file and change this example value.
 bibliography: Rmed2020_Rjournal.bib
 
 output: rticles::rjournal_article
