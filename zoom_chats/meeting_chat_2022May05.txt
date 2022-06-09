@@ -1,0 +1,56 @@
+16:16:02 From  Stephan Kadauke 21  to  Everyone:
+	dcheny@gmail.com
+
+16:19:38 From  Stephan Kadauke 21  to  Everyone:
+	https://bit.ly/rmed2022schedule
+16:22:43 From  Peter Doyle Higgins  to  Everyone:
+	https://appsilon.com/shiny-workshops-and-tutorials/
+	
+16:28:52 From  Stephan Kadauke 21  to  Everyone:
+	    o	Jeff Leek - Peter to invite
+		o	Paul Harris - Beth to invite
+		o	Joelle Pineau (Meta AI // OPT) - ? to invite
+		o	Neale Batria (President of Applied Epi) – accepted!
+		o	Brianna Lindsay (R/Ladies Gaborone) - ? to invite
+		
+16:31:46 From  Peter Doyle Higgins  to  Everyone:
+	jtleek@jhu.edu
+	jtleek@fredhutch.org
+	
+16:33:23 From  Beth Atkinson  to  Everyone:
+	https://user2022.r-project.org/program/talks/  (potential speakers)
+	https://www.sciencedirect.com/science/article/pii/S1532046421002008  (REDCAP/CDIS module)
+	
+16:39:09 From  Peter Doyle Higgins  to  Everyone:
+	From UseR
+
+	Christophe Genolini - R++, a easy-to-use graphical R interface for medical doctor
+	Hannah Frick - censored - A tidymodels package for survival analysis
+	Alexander Kowarik/Statistics Austria - Synthetic data generation with simPop - new features xgboost and advanced calibration
+	Steven A. Miller - Multilevel Modeling in the BlueSky Statistics Environment: Growth Curves, Daily Diaries, and Experience Sampling
+	Ross Dierkhising - Transitioning from Commercial Software to the R-based GUI BlueSky Statistics in a Large Academic Medical Center
+	Neale Batra - The Epi R Handbook: getting R in the hands of frontline public health responders
+	https://www.meetup.com/rladies-gaborone/events/283714367/
+	
+16:44:19 From  Peter Doyle Higgins  to  Everyone:
+	Potential smart folks to invite
+	Thomas Pedersen (thomasp85)
+	Claus Wilke
+	Hiroaki Yutani
+	Lionel Henry
+	Kara Woo
+	Dewey Dunnington
+	Jim Hester
+	Bob Rudis
+	Max Kuhn
+	Kirill Muller
+	Dana Paige Seidel
+	Richie Cotton
+	Mine Rundel
+	
+16:51:40 From  Beth Atkinson  to  Everyone:
+	From UseR
+	
+	Laure Cougnaud - Clinical Data Review Reporting Tool
+	Andrew Patterson - What happens next? The day after deployment
+	
