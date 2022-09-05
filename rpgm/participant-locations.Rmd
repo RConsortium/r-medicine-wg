@@ -1,0 +1,91 @@
+---
+title: "Locations of R/Medicine 2021 Participants"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(tidygeocoder)
+library(lutz)
+library(leaflet)
+library(here)
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load the data
+
+```{r}
+registrants <- read_csv(here("Registrants.csv"))
+```
+
+## How many clinicians?
+
+Note: this was manually inferred from the `Title` field. Includes trainees.
+
+```{r}
+registrants %>%
+  filter(`Clinician?` == 'y') %>%
+  summarize(n = n(), percent = n/nrow(registrants) * 100)
+```
+
+## Add longitudes and latitudes
+
+Takes a few minutes to generate
+
+```{r}
+registrants_with_long_lat <- registrants %>%
+  geocode(
+    address = glue::glue("{City}, {`Work State/Prov.`}"),
+#    city = "City",
+#    state = "Work State/Prov.",
+    country = "Work Country",
+    method = "osm" # default "census" method requires street address
+  )
+```
+
+## Look up timezones and timezone offsets
+
+```{r}
+registrants <- registrants_with_long_lat %>%
+  mutate(
+    timezone = tz_lookup_coords(lat = lat, lon = long)
+  ) %>%
+  left_join(
+    tz_list() %>%
+      filter(is_dst == TRUE),   # R/Med (08/27-30) is during daylight time
+    by = c("timezone" = "tz_name")
+  ) %>%
+  mutate(
+    phillydst_offset_h = utc_offset_h + 4
+  )
+```
+
+## List of countries
+
+```{r}
+registrants %>%
+  drop_na(`Work Country`) %>%
+  group_by(`Work Country`) %>%
+  summarize(n = n()) %>%
+  arrange(desc(n))
+```
+
+## Map of registrants
+
+```{r}
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(
+    lng = registrants$long,
+    lat = registrants$lat
+  )
+```
+
+## Distribution of time zone offsets
+
+```{r}
+ggplot(registrants) +
+  geom_bar(aes(x = phillydst_offset_h))
+```
