@@ -1,0 +1,97 @@
+Keynote Speakers:
+
+
+2018
+
+Robert Tibshirani - How many units of platelets will the Stanford Hospial need tomorrow?
+Victoria Stodden - Computatinal Reproducibility in Medical Research: Toward Open Code and Data
+Michael Lawrence - Genomic Data Analysis with R and Bioconductor
+
+2019
+
+Terry Therneau - Using multi-state models and absolute risk in clinical research
+Frank Harrell - R for clinical trial reporting
+Rod Hayward - Challenging medical dogmas with data: diabetes, lipids, 
+              blood pressure and cardiovascular risk
+Donna Spiegelman - The case for SAS as the go-to tool for statistical analysis of 
+                   funded research (if only they'd lower the price...)
+
+2020
+
+Daniela Witten - Beyond Sample Splitting: Valid Inference while 'Double Dipping'
+Robert Gentleman - A Glimpse into the Future
+Ewen Harrison - From Cancer to COVID: Scale and Agility in Global Health Research using R
+Patrick Mathias - Increasing Access to COVID-10 Testing with Open Source Tools
+
+2021
+
+Karandeep Singh - Bringing Machine Learning Models to the Bedside at Scale
+Ziad Obermeyer - Dissecting Algorithmic Bias
+
+2022
+
+JJ Allaire  - Quarto
+Frank Harrell - R Workflow for Reproducible Biomedical Research Using Quarto
+
+----------------------------------------------------------------------------------
+
+Ideas for keynote speakers:
+
+* Visualization? J. Murdoch
+* Covid related? 
+  + Ryan Tibshirani - Delphi group/CMU, Caroline Buckee - Harvard,  Nicholas Reich https://reichlab.io/research
+  + Covid Qualitative Research - Dr. Marcella Nunez-Smith Yale
+* FDA?
+* Any international speakers?
+  + Thomas Jaki "Designing Clinical Trials during a Pandemic" (UK)
+* Amgen & Clinical Trials
+* John Chambers - not interested
+* Send invite to Karandeep Singh, Caroline Buckhee
+* Karandeep Singh agreed
+* Still waiting to hear from Dr. Marcella Nunez-Smith
+* Other Alison Hill - COVID Data Forum - maybe?  Want to leverage what we learned about COVID for the next hot topic.  Not just "here is where we are with COVID".
+* Does anyone know Nicholas Reich?  
+* Does anyone know Nicholas Reich? Peter will invite. 
+* Still waiting to hear from Dr. Marcella Nunez-Smith - still no response
+  + Frank as keynote speaker again on medical reproducibility?
+    https://www.fharrell.com/post/errmed/
+  + Paul Harris, REDCap founder - future of REDCap
+    Epic/REDCap integration - adjudicate data from EPIC, CDIS REDCap
+* More about Covid?
+  + https://www.phc.health/team-member/charity-dean-md-mph-tm-2  
+    https://pandemicpuzzle.stanford.edu/
+* Public Health/Epidemiology, hotspots - Delphi group 
+
+* What might we want for a conference theme (for keynotes)?  
+  + Data analytics for healthcare systems. Think about possible presenters. How can we reach the patients we want to reach (continuity of care, marketing, ...).
+  + Communicating data to non-tech audiences
+     * https://en.wikipedia.org/wiki/Amanda_Cox
+     * https://hannahfry.co.uk/new-yorker-article-when-graphs-are-a-matter-of-life-and-death-june-2021/
+  + https://ohdsi.org/ (pronounced "Odyssey") Data standardizing, common data models, analytic R tools
+  + Paul Harris, REDCap founder - future of REDCap
+    Epic/REDCap integration - adjudicate data from EPIC, CDIS REDCap
+
+* Steve to ask Frank Harrell
+* Stephan to ask Cathy O'Neil (Weapons of Math Destruction, The Shame Machine)
+* Peter sent email to previous keynotes asking for nominations
+* Communicating data to non-tech audiences
+     * https://en.wikipedia.org/wiki/Amanda_Cox
+     * https://hannahfry.co.uk/new-yorker-article-when-graphs-are-a-matter-of-life-and-death-june-2021/
+* Paul Harris, REDCap founder - future of REDCap
+     * Epic/REDCap integration - adjudicate data from EPIC, CDIS REDCap
+* Any non-US keynotes?
+
+* Joe will see if we can get commitment from someone at Rstudio for talk/workshop {quarto}.  Keynote about upending publishing world.
+  - https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science
+* Stephan to ask Cathy O'Neil (Weapons of Math Destruction, The Shame Machine) as keynote
+* Stephan to ask Stephen Master (How can we ensure reproducibility and clinical translation of machine learning applications in laboratory medicine?)
+* Stephan to ask Michael Kearns
+Stephan - Cathy O'Neil's person responded with questions (including asking about $)
+
+Joe to reach out to working group regarding FDA Submissions - identify someone to give a talk (updates on their work)
+AppliedEpi - Joe presented - https://appliedepi.org/tutorial/ . Lots of interest in moving towards R (R in West Africa or Haiti).  Working with "Doctors without Borders." Might be some interesting talks/keynotes. Joe will pass contact info to Peter to reach out to Neil.
+
+Davis Vaughn (davis@rstudio.com) - willing to do 20/30 min talk on {clock}. Steve is willing to send invite email.
+
+* 3-4 keynotes would be nice. JJ said yes, Peter talking with Neil as a potential, Steve to check with Frank Harrell. Stephan checking with Stephen Master. 
+
