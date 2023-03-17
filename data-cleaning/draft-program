@@ -1,0 +1,58 @@
+Planning for Data Cleaning Workshop
+
+Example workshop website we can follow:
+https://github.com/shannonpileggi/gtreg-workshop-rinpharma-2022
+
+This would total 3 (or 4) hours, with 10-minute breaks each hour,
+and I was wondering if you would be interested in demonstrating some of the benefits
+of tidyxl and unpivotr for particularly messy medical data
+(I can build the messy medical data sets to suit).
+
+
+Duncan, If you can, take a look at (scroll down to the bottom) https://github.com/higgi13425/medicaldata
+the 5 messy datasets here to see if they would help demonstrate the benefits of tidyxl and unpivotr.
+
+
+Draft outline
+
+
+Principles of Data Management (CL)
+Structuring from the beginning for success
+Generating and using a codebook/data dictionary
+introduction to validating your data (ranges, categories)
+Finding the problems - what is untidyness? missingness? out of range? invalid values? (CL)
+Exploratory Data Tools (CL) - Data checking - Exploratory Data Validation
+skimr
+visdat, naniar
+DataExplorer
+Data validation tools (pointblank)
+Stage 1 cleaning (SMP)
+skipping headers at top of sheet
+janitor for empty rows/columns
+Cleaning names - janitor::clean_names, labelling varnames, labelling values
+adding units to variable names/labels to help future you
+bad categories: Hispanic and hispanic and hispannic in one column
+bad values: NAs, -999 or 99 in a numeric column
+mixed lab data - potassium mostly numeric, except for occasional: "test invalid due to hemolysis", or platelets mostly numeric, with some "115 (may be inaccuately low due to clumping)".
+parsing numbers mixed with text
+when to use unite/separate
+cleaning up dates - lubridate, clock, janitor:: excel_numeric_to_date
+
+
+Stage 2 cleaning/wrangling (PH)
+Concept of unit of observation - is the unit of observation a visit/hospital stay (taller dataset)? or a patient (wider)?
+tidyr: Pivoting wider, longer
+padr to fill in dates/times
+Joins of data from different sources - patient demographics (local) with social vulnerability index from CDC
+
+
+Stage 3 - Advanced data cleaning tools for complicated messiness (DG)
+tidyxl
+unpivotr
+*unheadr?
+Also, consider Karl Broman's principles:
+https://kbroman.org/Talk_DataCleaning/data_cleaning.pdf
+
+
+ 
+
